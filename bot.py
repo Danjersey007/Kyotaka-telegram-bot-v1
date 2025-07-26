@@ -29,7 +29,7 @@ from commands.nightmode import nightmode
 from commands.lock import lock
 from commands.tagall import tagall
 
-TOKEN = "7896770652:AAFxLT5-5KZN9XWYqDCJWit7WTpd4HOm1yo"
+TOKEN = "7330826697:AAGq9cqzWF8p835c7tVsO8W5CJPXepT5BuY"
 
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
 
@@ -64,7 +64,6 @@ async def run_bot():
     app.add_handler(CommandHandler("lock", lock))
     app.add_handler(CommandHandler("tagall", tagall))
     app.add_handler(CommandHandler(["ai", "kyo"], ai_kyo))
-    logging.info("✅ Bot prêt")
     await app.run_polling()
 
 if __name__ == "__main__":
