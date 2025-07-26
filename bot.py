@@ -31,8 +31,9 @@ from commands.ban import ban
 from commands.mute import mute
 from commands.unmute import unmute
 from commands.nightmode import nightmode
-from commands.lock import lock
 from commands.tagall import tagall
+
+import commands.lock
 
 TOKEN = "7896770652:AAFxLT5-5KZN9XWYqDCJWit7WTpd4HOm1yo"
 
@@ -80,7 +81,6 @@ async def main() -> None:
     app.add_handler(CommandHandler("mute", mute))
     app.add_handler(CommandHandler("unmute", unmute))
     app.add_handler(CommandHandler("nightmode", nightmode))
-    app.add_handler(CommandHandler("lock", lock))
     app.add_handler(CommandHandler("tagall", tagall))
 
     logging.info("✅ Bot lancé et prêt à répondre ✨")
