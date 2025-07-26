@@ -1,6 +1,5 @@
 import logging
 import time
-import asyncio
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
@@ -66,5 +65,3 @@ async def main():
     app.add_handler(CommandHandler(["ai", "kyo"], ai_kyo))
     logging.info("✅ Bot prêt")
     await app.run_polling()
-
-asyncio.run(main())
