@@ -28,7 +28,7 @@ from commands.nightmode import nightmode
 from commands.lock import lock
 from commands.tagall import tagall
 
-TOKEN = "LE_TOKEN_DE_TON_BOT"
+TOKEN = "8162258476:AAGKoyd6rbfIMZdL7y2bgFMriQGfRq4I9Do"
 
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
 
